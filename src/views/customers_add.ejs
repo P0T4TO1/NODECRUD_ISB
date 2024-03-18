@@ -1,0 +1,34 @@
+<%- include("partials/_header") %>
+
+<div class="container mt-5 min-vh-100">
+  <div class="col-md-5">
+    <div class="card-body">
+      <form action="/add" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          class="form-control mb-2"
+          autofocus
+        />
+        <input
+          type="email"
+          name="address"
+          placeholder="Correo"
+          class="form-control mb-2"
+        />
+        <input
+          type="text"
+          name="phone"
+          placeholder="Teléfono"
+          class="form-control mb-2"
+        />
+
+        <button type="submit" class="btn btn-info">Agregar</button>
+        <a href="/" class="btn btn-primary"> Regresar </a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/_footer") %>
